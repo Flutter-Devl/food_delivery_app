@@ -1,10 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:food_delivery_app/constants/colors.dart';
-import 'package:food_delivery_app/screens/profile_screens/about_screen.dart';
 import 'package:food_delivery_app/screens/profile_screens/checkout_screen.dart';
 import 'package:food_delivery_app/screens/forgot_password_screen.dart';
 import 'package:food_delivery_app/screens/home_screen.dart';
-import 'package:food_delivery_app/screens/profile_screens/inbox_screen.dart';
 import 'package:food_delivery_app/screens/introduction_screen.dart';
 import 'package:food_delivery_app/screens/landing_screen.dart';
 import 'package:food_delivery_app/screens/login_screen.dart';
@@ -12,7 +10,6 @@ import 'package:food_delivery_app/screens/menu_screen.dart';
 import 'package:food_delivery_app/screens/profile_screens/more_screen.dart';
 import 'package:food_delivery_app/screens/profile_screens/my_order_screen.dart';
 import 'package:food_delivery_app/screens/new_password_screen.dart';
-import 'package:food_delivery_app/screens/profile_screens/notification_screen.dart';
 import 'package:food_delivery_app/screens/offer_screen.dart';
 import 'package:food_delivery_app/screens/otp_screen.dart';
 import 'package:food_delivery_app/screens/profile_screens/payment_screen.dart';
@@ -31,7 +28,6 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Flutter Demo',
       theme: ThemeData(
         fontFamily: "Metropolis",
         primarySwatch: Colors.red,
@@ -82,9 +78,6 @@ class MyApp extends StatelessWidget {
         ProfileScreen.routeName: (context) => const ProfileScreen(),
         MoreScreen.routeName: (context) => MoreScreen(),
         PaymentScreen.routeName: (context) => const PaymentScreen(),
-        NotificationScreen.routeName: (context) => const NotificationScreen(),
-        AboutScreen.routeName: (context) => const AboutScreen(),
-        InboxScreen.routeName: (context) => InboxScreen(),
         MyOrderScreen.routeName: (context) => const MyOrderScreen(),
         CheckoutScreen.routeName: (context) => const CheckoutScreen(),
       },

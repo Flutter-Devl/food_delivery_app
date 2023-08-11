@@ -22,36 +22,9 @@ class HomeScreen extends StatelessWidget {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                const SizedBox(height: 40),
-                const Padding(
-                  padding: EdgeInsets.symmetric(horizontal: 20),
-                  child: Text("Deilivering to"),
-                ),
-                Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 20),
-                  child: DropdownButtonHideUnderline(
-                    child: SizedBox(
-                      width: 250,
-                      child: DropdownButton(
-                        value: "current location",
-                        items: const [
-                          DropdownMenuItem(
-                            value: "current location",
-                            child: Text("Current Location"),
-                          ),
-                        ],
-                        icon: Image.asset(
-                          SizeConfig.getAssetName(
-                              "dropdown_filled.png", "virtual"),
-                        ),
-                        style: SizeConfig.getTheme(context).headlineMedium,
-                        onChanged: (_) {},
-                      ),
-                    ),
-                  ),
-                ),
                 const SizedBox(height: 20),
                 const MySearchBar(title: "Search Food"),
+                const SizedBox(height: 20),
                 Padding(
                   padding: const EdgeInsets.symmetric(horizontal: 20.0),
                   child: Row(

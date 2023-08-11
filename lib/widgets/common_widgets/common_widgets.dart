@@ -17,7 +17,7 @@ Widget buildCategoryList(BuildContext context) {
               SizeConfig.getAssetName("hamburger2.jpg", "real"),
               fit: BoxFit.cover,
             ),
-            name: "Offers",
+            name: "Hamburger",
           ),
           const SizedBox(width: 10),
           CategoryCard(
@@ -64,11 +64,11 @@ Widget mostPopularCard() {
               SizeConfig.getAssetName("pizza4.jpg", "real"),
               fit: BoxFit.cover,
             ),
-            name: "Cafe De Bambaa",
+            name: "Cafe Bambaa",
           ),
           const SizedBox(width: 30),
           MostPopularCard(
-            name: "Burger by Bella",
+            name: "Dessert ",
             image: Image.asset(
               SizeConfig.getAssetName("dessert3.jpg", "real"),
               fit: BoxFit.cover,
@@ -90,20 +90,20 @@ Widget recentItemCard(BuildContext context) {
             SizeConfig.getAssetName("pizza3.jpg", "real"),
             fit: BoxFit.cover,
           ),
-          name: "Mulberry Pizza by Josh",
+          name: "Pizza",
         ),
         RecentItemCard(
             image: Image.asset(
               SizeConfig.getAssetName("coffee.jpg", "real"),
               fit: BoxFit.cover,
             ),
-            name: "Barita"),
+            name: "Coffee"),
         RecentItemCard(
             image: Image.asset(
               SizeConfig.getAssetName("pizza.jpg", "real"),
               fit: BoxFit.cover,
             ),
-            name: "Pizza Rush Hour"),
+            name: "Pizza Hour"),
       ],
     ),
   );
